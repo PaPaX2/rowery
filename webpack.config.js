@@ -17,8 +17,11 @@ const html = ["index"].map(
 module.exports = {
   entry: "./src/app.js",
   devtool: "inline-source-map",
+  devServer: {
+    open: ['/views'], //musi tak być ze względu na konieczność kopiowania plików pod noda
+  },
   output: {
-    filename: "public/script.[contenthash].js", //to jest ścieżka w pliku index.html
+    filename: "public/script.[contenthash].js",
     path: path.resolve(__dirname, "./production"),
   },
   optimization: {
