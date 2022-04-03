@@ -1,3 +1,5 @@
+"use strict"
+
 import "./sass/style.scss";
 console.log("działa prawie");
 

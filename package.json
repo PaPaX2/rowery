@@ -6,10 +6,10 @@
     "browserslist": "> 0.25%, not dead",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "webpack-dev-server --mode development",
+        "watch": "webpack-dev-server --mode development --config webpack.dev.js",
         "start": "npm-run-all build node",
         "node": "node production/server.js",
-        "build": "webpack --mode production",
+        "build": "webpack --mode production --config webpack.prod.js ",
         "prettier": "prettier --write ."
     },
     "author": "geostrony.pl",

@@ -5,9 +5,10 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
-const isProd = process.env.NODE_ENV === "production";
-
-const html = ["index"].map(
+const html = [
+  "index",
+  "onas",
+].map(
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,
@@ -17,9 +18,6 @@ const html = ["index"].map(
 module.exports = {
   entry: "./src/app.js",
   devtool: "inline-source-map",
-  devServer: {
-    open: ['/views'], //musi tak być ze względu na konieczność kopiowania plików pod noda
-  },
   output: {
     filename: "public/script.[contenthash].js",
     path: path.resolve(__dirname, "./production"),
@@ -65,7 +63,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./public/style.[contenthash].css", //to jest ścieżka w plku index
+      filename: "./public/style.[contenthash].css",
     }),
 
     new CleanWebpackPlugin(),

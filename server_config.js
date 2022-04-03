@@ -19,6 +19,11 @@ app.get('/', (req, res) => {
   res.show('/index.html');
 });
 
+app.get('/onas', (req, res) => {
+  res.show('/onas.html');
+});
+
+
 const PORT = process.env.PORT || port;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}...`);
