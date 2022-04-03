@@ -17,10 +17,14 @@ const html = [
 );
 module.exports = {
   entry: "./src/app.js",
-  devtool: "inline-source-map",
+  //devtool: "inline-source-map",
   output: {
-    filename: "public/script.[contenthash].js",
+    filename: "public/app.[contenthash].js",
     path: path.resolve(__dirname, "./production"),
+  },
+  node: {
+    global: false,
+    __filename: 'mock',
   },
   optimization: {
     minimize: true,
@@ -50,7 +54,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: [["@babel/preset-env", { targets: "ie 11" }]],
+            presets: [["@babel/preset-env"]],
           },
         },
       },
