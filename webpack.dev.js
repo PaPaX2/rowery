@@ -39,6 +39,9 @@ module.exports = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
+        include: [
+          path.resolve(__dirname, '/node_modules'),
+        ],
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
       },
       {

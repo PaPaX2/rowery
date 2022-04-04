@@ -1,5 +1,6 @@
 @import "normalize.css";
-
-h1 {
-  color: green;
-}
+@import "./utils/index.scss";
+@import "./base/index.scss";
+@import "./components/index.scss";
+@import "./layout/index.scss";
+@import "./pages/index.scss";

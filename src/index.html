@@ -1,13 +1,52 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rowery</title>
-  </head>
-  <body>
-    <h1 class="click">startttt</h1>
-    <h2>metal</h2>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <title>Rowery</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="container nav">
+                <a href="#" class="nav__logo">
+                    <img src="./gfx/logo.png" alt="" class="logo__img">
+                </a>
+                <ul class="nav__menu">
+                    <li class="nav__menu-item">
+                      <a href="#" class="nav__menu-link">Rowery</a>
+                    </li>
+                    <li class="nav__menu-item">
+                      <a href="#" class="nav__menu-link">O nas</a>
+                    </li>
+                    <li class="nav__menu-item">
+                      <a href="#" class="nav__menu-link">Galeria</a>
+                    </li>
+                    <li class="nav__menu-item">
+                      <a href="#" class="nav__menu-link">Kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section class="slider">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="./gfx/bike2.jpg" alt="bike 1" class="slider__slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./gfx/bike1.jpg" alt="bike 2" class="slider__slide">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./gfx/bike3.jpg" alt="bike 3" class="slider__slide">
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+        </section>
+    </body>
 </html>

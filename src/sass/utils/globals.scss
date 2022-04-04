@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+    font-size: 18px;
+    color: $color-black;
+    font-family: 'Regular';
+    background: $color-white;
+    overflow-x: hidden
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
