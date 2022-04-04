@@ -8,7 +8,7 @@
         <title>Rowery</title>
     </head>
     <body>
-        <header class="header">
+        <header class="section section--black">
             <nav class="container nav">
                 <a href="#" class="nav__logo">
                     <img src="./gfx/logo.png" alt="" class="logo__img">
@@ -29,13 +29,12 @@
                 </ul>
             </nav>
         </header>
-        <section class="slider">
+        <section class="section slider slider--main">
             <div class="swiper">
-              <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img src="./gfx/bike2.jpg" alt="bike 1" class="slider__slide" width="100">
+                  <img src="./gfx/bike2.jpg" alt="bike 1" class="slider__slide">
                 </div>
                 <div class="swiper-slide">
                   <img src="./gfx/bike1.jpg" alt="bike 2" class="slider__slide">
@@ -44,9 +43,20 @@
                   <img src="./gfx/bike3.jpg" alt="bike 3" class="slider__slide">
                 </div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-pagination"></div>
             </div>
+        </section>
+        <section class="section section--black">
+          <div class="container">
+            <div class="title">
+              <h3 class="title__uppercase">
+                Popularne <span class="title__uppercase--bold">modele</span>
+              </h3>
+              <p class="title__subtitle">
+                Najpopularniejsze, gorące i topowe modele
+              </p>
+            </div>
+          </div>
         </section>
     </body>
 </html>

@@ -2,26 +2,22 @@ import Swiper from 'swiper/bundle';
 //import 'swiper/css';
 
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 600,
     // Optional parameters
-    direction: 'vertical',
+    direction: 'horizontal',
     loop: true,
-  
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    centeredSlides: true,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
     },
   });
 
