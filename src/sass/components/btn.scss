@@ -1,0 +1,16 @@
+.btn {
+    display: table;
+    margin: 0 auto;
+    padding: 2px 15px;
+    background-color: $color-black;
+    color: $color-white;
+    line-height: 30px;
+    text-decoration: none;
+    letter-spacing: 3px;
+
+    &:hover {
+        background-color: $color-white;
+        border: 1px solid $color-red;
+        color: $color-red;
+    }
+}

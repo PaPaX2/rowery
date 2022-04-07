@@ -1,13 +1,21 @@
 .title {
-    font-family: 'Light';
     padding: 50px;
+    text-align: center;
 
     &__uppercase {
         text-transform: uppercase;
         font-size: 44px;
+        font-weight: 200;
+        margin: 0 0 20px 0;
+        letter-spacing: 5px;
 
         &--bold {
             font-weight: 700;
         }
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-style: italic;
     }
 }
