@@ -1,4 +1,6 @@
-@import 'swiper/css/bundle';
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
 
 .swiper-pagination-bullet-active {
     background-color: $color-gray;

@@ -13,15 +13,15 @@ const html = [
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,
-      filename: `./views/${item}.html`,
+      filename: `${item}.html`,
     })
 );
 module.exports = {
   entry: "./src/app.js",
   //devtool: "inline-source-map",
   output: {
-    filename: "public/app.[contenthash].js",
-    path: path.resolve(__dirname, "./production"),
+    filename: "app.[contenthash].js",
+    path: path.resolve(__dirname, "./docs"),
   },
   node: {
     global: false,
@@ -67,35 +67,15 @@ module.exports = {
         exclude: /src\templates/,
         loader: "html-loader",
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'public/gfx/images/[hash][ext][query]'
-        }
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'public/gfx/fonts/[hash][ext][query]'
-        }
-      },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./public/style.[contenthash].css",
+      filename: "src/style.[contenthash].css",
     }),
 
     new CleanWebpackPlugin(),
 
     ...html,
-
-    new CopyPlugin({
-      patterns: [
-        {from: "./server_config.js", to: "server.js" }
-      ],
-    }),
   ],
 };
