@@ -2,17 +2,15 @@ import Swiper from 'swiper/bundle';
 
 const swiperMain = new Swiper('.slider--main', {
     autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
+      delay: 4500,
     },
-    speed: 600,
-    direction: 'horizontal',
+    disableOnInteraction: false,
     loop: true,
     effect: 'fade',
     fadeEffect: {
       crossFade: true
     },
-    centeredSlides: true,
+    speed: 600,
     pagination: {
       el: '.swiper-pagination-main',
     },
@@ -20,7 +18,7 @@ const swiperMain = new Swiper('.slider--main', {
 
   const swiperProducts = new Swiper('.slider--products', {
     autoplay: {
-      delay: 5000,
+      delay: 4000,
     },
     slidesPerView: 3,
     spaceBetween: 40,
@@ -35,14 +33,10 @@ const swiperMain = new Swiper('.slider--main', {
 
   const swiperYours = new Swiper('.slider--yours', {
     autoplay: {
-      delay: 7500,
+      delay: 4000,
     },
     slidesPerView: 5,
     loop: true,
-    pagination: {
-      el: ".slider-pagination--yours",
-      clickable: true
-    }
   });
 
   export {swiperMain, swiperProducts, swiperYours};
