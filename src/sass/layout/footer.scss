@@ -1,3 +1,23 @@
 .footer {
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__link {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 20px;
+        font-weight: 500;
+        padding: 25px 0;
+        transition: text-decoration .5s;
+
+        &:hover {
+            text-decoration: underline;
+            transition: text-decoration .5s;
+        }
+    }
+
+    &__developer {
+        color: $color-white;
+    }
 }
