@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    &__links {
+        display: block;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    &__list {
+        flex: 1 1 25%;
+    }
+}
