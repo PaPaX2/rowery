@@ -37,7 +37,6 @@ const swiperMain = new Swiper('.slider--main', {
       },
     },
     loop: true,
-    loopFillGroupWithBlank: true,
     navigation: {
       nextEl: '.slider-button-next--products',
       prevEl: '.slider-button-prev--products',
