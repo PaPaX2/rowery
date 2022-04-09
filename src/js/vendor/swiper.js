@@ -20,9 +20,22 @@ const swiperMain = new Swiper('.slider--main', {
     autoplay: {
       delay: 4000,
     },
-    slidesPerView: 3,
-    spaceBetween: 40,
-    slidesPerGroup: 3,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 40,
+      },
+      769: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      slidesPerGroup: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 40,
+        slidesPerGroup: 3,
+      },
+    },
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
@@ -35,7 +48,23 @@ const swiperMain = new Swiper('.slider--main', {
     autoplay: {
       delay: 4000,
     },
-    slidesPerView: 5,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      460: {
+        slidesPerView: 2,
+      },
+      600: {
+        slidesPerView: 3,
+      },
+      800: {
+        slidesPerView: 4,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
     loop: true,
   });
 
