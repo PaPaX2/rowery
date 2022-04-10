@@ -1,7 +1,7 @@
 .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     
     @include mobile-wild {
         font-size: .8em;

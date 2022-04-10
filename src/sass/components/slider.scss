@@ -61,14 +61,26 @@
             max-width: 100%;
             object-fit: contain;
         }
+
+        &--menu {
+            height: 230px;
+        }
     }
 
     &__title {
-        text-align: center;
-        font-weight: 400;
-        margin: -15px 0 0 0;
         color: $color-black;
         text-transform: uppercase;
+
+        &--products{
+            text-align: center;
+            font-weight: 400;
+            margin: -15px 0 0 0;    
+        }
+
+        &--menu {
+            color: $color-red;
+            margin: .9em 0;
+        }
     }
 
     &__hover {
@@ -90,5 +102,10 @@
                 transform: scale(.9);
             }
         }
+    }
+
+    &__empty-space {
+        height: 20px;
+        display: block;
     }
 }

@@ -1,5 +1,16 @@
 import Swiper from 'swiper/bundle';
 
+const swiperMenu = new Swiper('.slider--menu', {
+  autoplay: {
+    delay: 4500,
+  },
+  disableOnInteraction: false,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination-menu',
+  },
+});
+
 const swiperMain = new Swiper('.slider--main', {
     autoplay: {
       delay: 4500,

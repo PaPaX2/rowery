@@ -1,17 +1,43 @@
 .btn {
     display: table;
-    margin: 0 auto;
     padding: 2px 15px;
     background-color: $color-black;
     color: $color-white;
     line-height: 30px;
     text-decoration: none;
     letter-spacing: 3px;
+    border: 1px solid transparent;
 
-    &:hover {
-        background-color: $color-white;
-        border: 1px solid $color-red;
-        color: $color-red;
+    &--center {
+        margin: 0 auto;
     }
+
+    &--small {
+        font-size: .8em;
+    }
+
+    &--search {
+    
+        &:before {
+            content: url('../gfx/assets/search-button.svg');
+            width: 12px;
+            height: 12px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        &:hover {
+            background-color: $color-red;
+        }
+    }
+
+    &--border {
+        &:hover {
+            background-color: $color-white;
+            border: 1px solid $color-red;
+            color: $color-red;
+        }
+    }
+   
 
 }
