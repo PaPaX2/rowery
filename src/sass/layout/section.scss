@@ -14,4 +14,15 @@
     &--products {
         margin-bottom: 50px;
     }
+
+    &--menu {
+        position: absolute;
+        z-index: 9;
+        background-color: $color-white;
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
 }
