@@ -1,11 +1,11 @@
 .nav {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
 
     &__logo {
+        z-index: 9;
         &__img {
             width: 200px;
         }
@@ -13,20 +13,58 @@
 
     &__menu {
         list-style: none;
-        margin: 24px 0;
         display: flex;
-    
-        &-item {
-            margin-left: 20px;
-        }
-    
-        &-link {
-            color: $color-white;
-            text-decoration: none;
-            
-            &:hover {
-                color: $color-gray;
+        padding: 0;
+        margin: 0;
+
+        &--mobile {
+            flex-direction: column;
+            padding-top: 70px;
+
+            &:before {
+                content: "";
+                border-top: 1px solid white;
+                width: 92%;
+                margin: 0 auto;
+                padding-bottom: 20px;
             }
+        }
+    }
+    
+    &__item {
+        margin-left: 20px;
+
+        &--mobile {
+            margin: 14px 30px;
+        }
+
+        &--sub {
+            font-size: 0.8em;
+            margin: 10px 45px;
+        }
+    }
+
+
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+        
+        &:hover {
+            color: $color-gray;
+        }
+    }
+
+
+    &--desktop {
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &--mobile {
+        @include desktop {
+            display: none;
         }
     }
 }

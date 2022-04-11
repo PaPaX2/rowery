@@ -1,0 +1,29 @@
+.dropdown {
+
+    input[type=checkbox]{
+        display: none;
+    }
+
+    label {
+        position: relative;
+        display: block;
+
+        &:after {
+            content: "+";
+            position: absolute;
+            right: 0;
+            top: -5px;
+            transform: scale(2.4);
+        }
+    }
+
+    ul{
+        display: none;
+    }
+
+    input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+
+}
+

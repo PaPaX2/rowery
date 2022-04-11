@@ -13,20 +13,77 @@
                 <a href="#" class="nav__logo">
                     <img src="./gfx/logo.png" alt="" class="logo__img">
                 </a>
-                <ul class="nav__menu">
-                    <li class="nav__menu-item menuJs">
-                        <a href="javascript:void(0)" class="nav__menu-link">Rowery</a>
-                    </li>
-                    <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">O nas</a>
-                    </li>
-                    <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">Galeria</a>
-                    </li>
-                    <li class="nav__menu-item">
-                        <a href="#" class="nav__menu-link">Kontakt</a>
-                    </li>
-                </ul>
+                <div class="nav--desktop">
+                    <ul class="nav__menu">
+                        <li class="nav__item menuJs">
+                            <a href="javascript:void(0)" class="nav__link">Rowery</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">O nas</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Galeria</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Kontakt</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="nav--mobile">
+                    <div class="nav__menu">
+                        <div class="hamburger">
+                            <input type="checkbox" id="hamburgerMenu">
+                            <label id="burger" for="hamburgerMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <ul class="hamburger__menu nav__menu nav__menu--mobile">
+                                <li class="dropdown">
+                                    <input type="checkbox" id="bikesMenu">
+                                    <label id="bikes" for="bikesMenu" class="nav__item nav__item--mobile">
+                                        Rowery
+                                    </label>
+                                    <ul class="nav__menu nav__menu--sub">
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery górskie</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery crossowe</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery miejskie</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery szosowe</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Gravele</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery składane</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Fat Bike</a>
+                                        </li>
+                                        <li class="nav__item nav__item--sub">
+                                            <a href="#" class="nav__link">Rowery dziecięce</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item nav__item--mobile">
+                                    <a href="#" class="nav__link">O nas</a>
+                                </li>
+                                <li class="nav__item nav__item--mobile">
+                                    <a href="#" class="nav__link">Galeria</a>
+                                </li>
+                                <li class="nav__item nav__item--mobile">
+                                    <a href="#" class="nav__link">Kontakt</a>
+                                </li>
+                            </ul>
+                        </div>       
+                    </div>
+                </div>
             </nav>
         </header>
         <nav class="section section--menu">
