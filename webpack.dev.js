@@ -7,6 +7,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const html = [
     "index",
     "onas",
+    "rowery",
 ].map(
   (item) =>
     new HtmlWebpackPlugin({

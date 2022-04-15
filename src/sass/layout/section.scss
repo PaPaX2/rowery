@@ -11,12 +11,20 @@
         background-color: $color-gray;
     }
 
+    &--nav {
+        position: fixed;
+        z-index: 99;
+    }
+
+    &--first {
+        padding-top: 70px;
+    }
+
     &--products {
         margin-bottom: 50px;
     }
 
     &--menu {
-        position: absolute;
         z-index: 9;
         background-color: $color-white;
         display: none;

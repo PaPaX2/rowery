@@ -21,6 +21,10 @@ app.get('/onas', (req, res) => {
   res.show('/onas.html');
 });
 
+app.get('/rowery', (req, res) => {
+  res.show('/rowery.html');
+});
+
 
 const PORT = process.env.PORT || port;
 app.listen(PORT, () => {

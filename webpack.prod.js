@@ -9,6 +9,7 @@ const TerserPlugin = require("terser-webpack-plugin");
 const html = [
   "index",
   "onas",
+  "rowery",
 ].map(
   (item) =>
     new HtmlWebpackPlugin({

@@ -8,7 +8,7 @@ swiperProducts;
 swiperYours;
 
 const section = document.querySelector('.section--menu');
-const menuJs = document.querySelectorAll('.menuJs');
+const menuJs = document.querySelectorAll('.menuJS');
 
 menuJs.forEach(item => {
     item.addEventListener('click', e => {
