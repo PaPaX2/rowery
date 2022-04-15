@@ -5,9 +5,10 @@
     align-content: stretch;
     align-items: stretch;
     width: 100%;
+    background-color: $color-black;
 
     &__box {
-        display: block;
+        display: flex;
         position: relative;
         text-decoration: none;
         overflow: hidden;
@@ -95,7 +96,6 @@
     }    
 
     &__img {
-        height: 100%;
         max-width: 100%;
         transform: scale(1);
         transition: transform 1s;
