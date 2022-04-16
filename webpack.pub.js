@@ -6,7 +6,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
-const html = ["index", "onas", "rowery"].map(
+const html = ["index", "onas", "rowery", "kategoria", "produkt"].map(
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,

@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
-const html = ["index", "onas", "rowery"].map(
+const html = ["index", "onas", "rowery", "kategoria", "produkt"].map(
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,

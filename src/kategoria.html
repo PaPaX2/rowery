@@ -1,407 +1,457 @@
 <!DOCTYPE html>
 <html lang="pl">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Rowery</title>
-    </head>
-    <body>
-        <header class="section section--black section--nav">
-            <nav class="container nav">
-                <a href="#" class="nav__logo">
-                    <img src="./gfx/logo.png" alt="" class="nav__logo-img">
-                </a>
-                <div class="nav--desktop">
-                    <ul class="nav__menu">
-                        <li class="nav__item menuJS">
-                            <a href="javascript:void(0)" class="nav__link">Rowery</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">O nas</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Galeria</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Kontakt</a>
-                        </li>
-                    </ul>    
-                </div>
-                <div class="nav--mobile">
-                    <div class="nav__menu">
-                        <div class="hamburger">
-                            <input type="checkbox" id="hamburgerMenu">
-                            <label id="burger" for="hamburgerMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </label>
-                            <ul class="hamburger__menu nav__menu nav__menu--mobile">
-                                <li class="dropdown">
-                                    <input type="checkbox" id="bikesMenu">
-                                    <label id="bikes" for="bikesMenu" class="nav__item nav__item--mobile">
-                                        Rowery
-                                    </label>
-                                    <ul class="nav__menu nav__menu--sub">
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery górskie</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery crossowe</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery miejskie</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery szosowe</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Gravele</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery składane</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Fat Bike</a>
-                                        </li>
-                                        <li class="nav__item nav__item--sub">
-                                            <a href="#" class="nav__link">Rowery dziecięce</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="nav__item nav__item--mobile">
-                                    <a href="#" class="nav__link">O nas</a>
-                                </li>
-                                <li class="nav__item nav__item--mobile">
-                                    <a href="#" class="nav__link">Galeria</a>
-                                </li>
-                                <li class="nav__item nav__item--mobile">
-                                    <a href="#" class="nav__link">Kontakt</a>
-                                </li>
-                            </ul>
-                        </div>       
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <nav class="section section--menu section--nav section--first">
-            <div class="container ">
-                <div class="menu">
-                    <div class="menu__links">
-                        <div class="menu__row">
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery górskie</h2>
-                                <li><a href="#" class="menu__link">Opilio</a></li>
-                                <li><a href="#" class="menu__link">Zoi</a></li>
-                                <li><a href="#" class="menu__link">Voras</a></li>
-                                <li><a href="#" class="menu__link">Atrox</a></li>
-                                <li><a href="#" class="menu__link">Via</a></li>
-                                <li><a href="#" class="menu__link menu__link--all">Pokaż wszystkie</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery crossowe</h2>
-                                <li><a href="#" class="menu__link">Gowith</a></li>
-                                <li><a href="#" class="menu__link">Ultar</a></li>
-                                <li><a href="#" class="menu__link">Ultar</a></li>
-                                <li><a href="#" class="menu__link">Lifestyle</a></li>
-                                <li><a href="#" class="menu__link">Trivor</a></li>
-                                <li><a href="#" class="menu__link menu__link--all">Pokaż wszystkie</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery miejskie</h2>
-                                <li><a href="#" class="menu__link">BYME</a></li>
-                                <li><a href="#" class="menu__link">Prestige</a></li>
-                                <li><a href="#" class="menu__link">Swan</a></li>
-                                <li><a href="#" class="menu__link">Mystic</a></li>
-                                <li><a href="#" class="menu__link">Mocha</a></li>
-                                <li><a href="#" class="menu__link menu__link--all">Pokaż wszystkie</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery dziecięce</h2>
-                                <li><a href="#" class="menu__link">Fatboy</a></li>
-                                <li><a href="#" class="menu__link">Reve Up</a></li>
-                                <li><a href="#" class="menu__link">Regina</a></li>
-                                <li><a href="#" class="menu__link">Formula</a></li>
-                                <li><a href="#" class="menu__link">Sweera</a></li>
-                                <li><a href="#" class="menu__link menu__link--all">Pokaż wszystkie</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu__row">
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery szosowe</h2>
-                                <li><a href="#" class="menu__link">Areo RC 109</a></li>
-                                <li><a href="#" class="menu__link">Spurcius</a></li>
-                                <li><a href="#" class="menu__link">Boalva</a></li>
-                                <li><a href="#" class="menu__link">Fit Bike</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Gravel</h2>
-                                <li><a href="#" class="menu__link">Goat</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Rowery składane</h2>
-                                <li><a href="#" class="menu__link">Simple</a></li>
-                                <li><a href="#" class="menu__link">Just</a></li>
-                                <li><a href="#" class="menu__link">Pocket</a></li>
-                            </ul>
-                            <ul class="menu__list">
-                                <h2 class="menu__title">Fat Bike</h2>
-                                <li><a href="#" class="menu__link">Zengo</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="menu__slider">
-                        <div class="swiper slider slider--menu">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/dag-bisikleti-11a2.jpg" alt="">
-                                    <h4 class="slider__title slider__title--menu">Rowery górskie</h4>
-                                    <p>Mountain bikes, or mtb bikes, are very durable. They are very useful for getting out of the pavement and crossing the pits in urban traffic.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/tur-bisikleti-8e64.jpg" alt="">
-                                    <h4 class="slider__title slider__title--menu">Rowery crossowe</h4>
-                                    <p>Tour bicycles are bicycles based on long distances and comfort with special designs with squad angles between road bikes and mountain bikes.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/sehir-bisikleti-fefd.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Rowery miejskie</h4>
-                                  <p>City bikes are used for transportation in the city. Its position is upright so that you can easily control the traffic. It is suitable for carrying loads.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/yol-yaris-bisikleti-55ef.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Rowery szosowe</h4>
-                                  <p>Road bikes are special bicycle models that you can go to very high speeds due to gear ratios, geometry and wheel thicknesses.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/gravel-1989.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Gravele</h4>
-                                  <p>They are performance-oriented bicycles whose geometry and gear ratios are similar to road bikes, plus that they also allow driving on light terrain and gravel roads.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/katlanir-bisiklet-9f02.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Rowery składane</h4>
-                                  <p>Folding bikes fold and take a compact form when transported and stored. Thus, they are easy to carry and do not take up much space.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/fat-bike-7536.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Fat Bike</h4>
-                                  <p>They are bicycle models that can travel without burial in snow and sand with their wide tires far above the standards.</p>
-                                </div>
-                                <div class="swiper-slide">
-                                  <img class="slider__img slider__img--menu" src="../src/gfx/menu-slider/cocuk-bisikleti-27a0.jpg" alt="">
-                                  <h4 class="slider__title slider__title--menu">Rowery dziecięce</h4>
-                                  <p>Bicycle models that have geometries according to child sizes in various age groups and attract children with their colorful designs.</p>
-                                </div>
-                            </div>
-                            <span class="slider__empty-space"></span>
-                            <div class="swiper-pagination swiper-pagination-menu"></div>
-                        </div>
-                    </div>
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kategoria</title>
+  </head>
+  <body>
+    <header class="section section--black section--nav">
+      <nav class="container nav">
+        <a href="./index.html" class="nav__logo">
+          <img src="./gfx/logo.png" alt="" class="nav__logo-img" />
+        </a>
+        <div class="nav--desktop">
+          <ul class="nav__menu">
+            <li class="nav__item menuJS">
+              <a href="javascript:void(0)" class="nav__link">Rowery</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">O nas</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Galeria</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Kontakt</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav--mobile">
+          <div class="nav__menu">
+            <div class="hamburger">
+              <input type="checkbox" id="hamburgerMenu" />
+              <label id="burger" for="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <ul class="hamburger__menu nav__menu nav__menu--mobile">
+                <li class="dropdown">
+                  <input type="checkbox" id="bikesMenu" />
+                  <label
+                    id="bikes"
+                    for="bikesMenu"
+                    class="nav__item nav__item--mobile"
+                  >
+                    Rowery
+                  </label>
+                  <ul class="nav__menu nav__menu--sub">
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery górskie</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery crossowe</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery miejskie</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery szosowe</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Gravele</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery składane</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Fat Bike</a>
+                    </li>
+                    <li class="nav__item nav__item--sub">
+                      <a href="#" class="nav__link">Rowery dziecięce</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav__item nav__item--mobile">
+                  <a href="#" class="nav__link">O nas</a>
+                </li>
+                <li class="nav__item nav__item--mobile">
+                  <a href="#" class="nav__link">Galeria</a>
+                </li>
+                <li class="nav__item nav__item--mobile">
+                  <a href="#" class="nav__link">Kontakt</a>
+                </li>
+              </ul>
             </div>
-            <span class="horizontal-line"></span>
-            <div class="container">
-                <div class="menu-close">
-                    <a href="#bicycle-filters" class="btn btn--search btn--small menuJS">Dobierz swój rower</a>
-                    <span class="menu-close__close menuJS"><b>&#10006;&nbsp;</b>Zamknij</span>  
-                </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <nav class="section section--menu section--nav section--first">
+      <div class="container">
+        <div class="menu">
+          <div class="menu__links">
+            <div class="menu__row">
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery górskie</h2>
+                <li><a href="#" class="menu__link">Opilio</a></li>
+                <li><a href="#" class="menu__link">Zoi</a></li>
+                <li><a href="#" class="menu__link">Voras</a></li>
+                <li><a href="#" class="menu__link">Atrox</a></li>
+                <li><a href="#" class="menu__link">Via</a></li>
+                <li>
+                  <a href="#" class="menu__link menu__link--all"
+                    >Pokaż wszystkie</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery crossowe</h2>
+                <li><a href="#" class="menu__link">Gowith</a></li>
+                <li><a href="#" class="menu__link">Ultar</a></li>
+                <li><a href="#" class="menu__link">Ultar</a></li>
+                <li><a href="#" class="menu__link">Lifestyle</a></li>
+                <li><a href="#" class="menu__link">Trivor</a></li>
+                <li>
+                  <a href="#" class="menu__link menu__link--all"
+                    >Pokaż wszystkie</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery miejskie</h2>
+                <li><a href="#" class="menu__link">BYME</a></li>
+                <li><a href="#" class="menu__link">Prestige</a></li>
+                <li><a href="#" class="menu__link">Swan</a></li>
+                <li><a href="#" class="menu__link">Mystic</a></li>
+                <li><a href="#" class="menu__link">Mocha</a></li>
+                <li>
+                  <a href="#" class="menu__link menu__link--all"
+                    >Pokaż wszystkie</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery dziecięce</h2>
+                <li><a href="#" class="menu__link">Fatboy</a></li>
+                <li><a href="#" class="menu__link">Reve Up</a></li>
+                <li><a href="#" class="menu__link">Regina</a></li>
+                <li><a href="#" class="menu__link">Formula</a></li>
+                <li><a href="#" class="menu__link">Sweera</a></li>
+                <li>
+                  <a href="#" class="menu__link menu__link--all"
+                    >Pokaż wszystkie</a
+                  >
+                </li>
+              </ul>
             </div>
-        </nav>
-        <section class="section section--category section--first">
-            <div class="category category--bike-page">
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery górskie</h3>
-                    <img src="./gfx/category/dag-bisikleti-square.jpg" alt="gravel" class="category__img">
-                </a>
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery crossowe</h3>
-                    <img src="./gfx/category/tur-bisikleti-8e64.jpg" alt="gravel" class="category__img">    
-                </a>    
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery miejskie</h3>
-                    <img src="./gfx/category/sehir-bisikleti-fefd.jpg" alt="gravel" class="category__img">
-                </a>
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery szosowe</h3>
-                    <img src="./gfx/category/yol-yaris-bisikleti-square.jpg" alt="gravel" class="category__img">
-                </a>    
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery składane</h3>
-                    <img src="./gfx/category/katlanir-bisiklet-9f02.jpg" alt="gravel" class="category__img">
-                </a>
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Gravel</h3>
-                    <img src="./gfx/category/gravel-1989.jpg" alt="gravel" class="category__img">
-                </a>
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Fat bike</h3>
-                    <img src="./gfx/category/fat-bike-7536.jpg" alt="gravel" class="category__img">
-                </a>
-                <a href="#" class="category__box">
-                    <h3 class="category__title">Rowery dziecięce</h3>
-                    <img src="./gfx/category/cocuk-bisikleti-27a0.jpg" alt="gravel" class="category__img">
-                </a>
+            <div class="menu__row">
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery szosowe</h2>
+                <li><a href="#" class="menu__link">Areo RC 109</a></li>
+                <li><a href="#" class="menu__link">Spurcius</a></li>
+                <li><a href="#" class="menu__link">Boalva</a></li>
+                <li><a href="#" class="menu__link">Fit Bike</a></li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Gravel</h2>
+                <li><a href="#" class="menu__link">Goat</a></li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Rowery składane</h2>
+                <li><a href="#" class="menu__link">Simple</a></li>
+                <li><a href="#" class="menu__link">Just</a></li>
+                <li><a href="#" class="menu__link">Pocket</a></li>
+              </ul>
+              <ul class="menu__list">
+                <h2 class="menu__title">Fat Bike</h2>
+                <li><a href="#" class="menu__link">Zengo</a></li>
+              </ul>
             </div>
-        </section>
-        <span id="#bicycle-filters" class="anchor"></span>
-        <section class="section">
-            <div class="section--black">
-                <div class="container">
-                    <div class="title">
-                        <h3 class="title__uppercase">
-                            Znajdź swój idealny <span class="title__uppercase--bold">rower</span>
-                        </h3>
-                        <p class="title__subtitle">
-                            Skorzystaj z poniższych filtrów aby szybko znaleźć rower idealny dla Ciebie
-                        </p>
-                    </div>
+          </div>
+          <div class="menu__product">
+            <div class="swiper product product--menu">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/dag-bisikleti-11a2.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery górskie
+                  </h4>
+                  <p>
+                    Mountain bikes, or mtb bikes, are very durable. They are
+                    very useful for getting out of the pavement and crossing the
+                    pits in urban traffic.
+                  </p>
                 </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/tur-bisikleti-8e64.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery crossowe
+                  </h4>
+                  <p>
+                    Tour bicycles are bicycles based on long distances and
+                    comfort with special designs with squad angles between road
+                    bikes and mountain bikes.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/sehir-bisikleti-fefd.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery miejskie
+                  </h4>
+                  <p>
+                    City bikes are used for transportation in the city. Its
+                    position is upright so that you can easily control the
+                    traffic. It is suitable for carrying loads.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/yol-yaris-bisikleti-55ef.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery szosowe
+                  </h4>
+                  <p>
+                    Road bikes are special bicycle models that you can go to
+                    very high speeds due to gear ratios, geometry and wheel
+                    thicknesses.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/gravel-1989.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">Gravele</h4>
+                  <p>
+                    They are performance-oriented bicycles whose geometry and
+                    gear ratios are similar to road bikes, plus that they also
+                    allow driving on light terrain and gravel roads.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/katlanir-bisiklet-9f02.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery składane
+                  </h4>
+                  <p>
+                    Folding bikes fold and take a compact form when transported
+                    and stored. Thus, they are easy to carry and do not take up
+                    much space.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/fat-bike-7536.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">Fat Bike</h4>
+                  <p>
+                    They are bicycle models that can travel without burial in
+                    snow and sand with their wide tires far above the standards.
+                  </p>
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="product__img product__img--menu"
+                    src="../src/gfx/menu-product/cocuk-bisikleti-27a0.jpg"
+                    alt=""
+                  />
+                  <h4 class="product__title product__title--menu">
+                    Rowery dziecięce
+                  </h4>
+                  <p>
+                    Bicycle models that have geometries according to child sizes
+                    in various age groups and attract children with their
+                    colorful designs.
+                  </p>
+                </div>
+              </div>
+              <span class="product__empty-space"></span>
+              <div class="swiper-pagination swiper-pagination-menu"></div>
             </div>
-            <div class="container">
-                <div class="filters">
-                    <ul id="filters" class="filters__container">
-                        <li class="filters__question">
-                            <p class="filters__title">Cel Twoich wyjazdów?</p>
-                            <ul class="filters__list">
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        wycieczki / rekreacja
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        codzienne dojazdy
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        zawody
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        turystyka / podróże
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="filters__question">
-                            <p class="filters__title">Twoja ulubiona nawierzchnia?</p>
-                            <ul class="filters__list">
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        miasto
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        asfalt
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        bezdroża
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        drogi gruntowe
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        piach / śnieg
-                                        <input type="checkbox" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="filters__question">
-                            <p class="filters__title">Rodzaj roweru?</p>
-                            <ul class="filters__list">
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        Męski
-                                        <input type="radio" name="bike-type" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        Damski
-                                        <input type="radio" name="bike-type" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        Unisex
-                                        <input type="radio" name="bike-type" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                                <li class="filters__item">
-                                    <label class="filters__checkbox">
-                                        Dziecęcy
-                                        <input type="radio" name="bike-type" class="filters__input">
-                                        <span class="filters__checkmark"></span>
-                                    </label>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="filters__question filters__question--submit">
-                            <button class="filters__submit btn btn--center btn--border">Pokaż wybrane rowery</button>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <footer class="section">
-            <section class="section--gray">
-                <div class="container">
-                    <div class="footer">
-                        <a href="#" class="footer__link">
-                            ROWERY
-                        </a>
-                        <a href="#" class="footer__link">
-                            O NAS
-                        </a>
-                        <a href="#" class="footer__link">
-                            GALERIA
-                        </a>
-                        <a href="#" class="footer__link">
-                            KONTAKT
-                        </a>    
-                    </div>
-                </div>  
-            </section>
-            <section class="section--black">
-                <div class="container">
-                    <div class="footer footer--copyright">
-                        <p>© Copyright STRONA ROWERY 2022, All Rights Reserved</p>
-                        <p><a href="https://geostrony.pl">geostrony.pl</a></p>
-                    </div>
-                </div>
-            </section>
-        </footer>
-    </body>
+          </div>
+        </div>
+      </div>
+      <span class="section__horizontal-line"></span>
+      <div class="container">
+        <div class="menu-close">
+          <a href="#bicycle-filters" class="btn btn--search btn--small menuJS"
+            >Dobierz swój rower</a
+          >
+          <span class="menu-close__close menuJS"
+            ><b>&#10006;&nbsp;</b>Zamknij</span
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="section section--first">
+      <div class="container">
+        <div class="breadcrumbs">
+          <a href="#" class="breadcrumbs__item">Home</a>
+          <a href="#" class="breadcrumbs__item">Rowery</a>
+          <a href="#" class="breadcrumbs__item">Kategoria</a>
+        </div>
+      </div>
+    </section>
+    <section class="section section--last">
+      <div class="container">
+        <div class="product product--list">
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/aero-rc-109-ultegra-1ea4.jpg"
+                alt="bike 1"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">aero-rc-109</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/fit-bike-20-57bd.jpg"
+                alt="bike 2"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">fit-bike-20</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/goat-10-dd19.jpg"
+                alt="bike 3"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">goat-10</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/goat-20-bb9f.jpg"
+                alt="bike 4"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">goat-20</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new">HIT</span>
+              <img
+                src="./gfx/thumbs/new-fluss-2ebb.jpg"
+                alt="bike 5"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">new-fluss</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/opilio-2-9e9a.jpg"
+                alt="bike 6"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">opilio-2</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new">HIT</span>
+              <img
+                src="./gfx/thumbs/simple-9ec4.jpg"
+                alt="bike 7"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">simple</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <img
+                src="./gfx/thumbs/snoop-5-7dc7.jpg"
+                alt="bike 8"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">snoop-5</p>
+            </a>
+          </div>
+          <div class="product__slide">
+            <a href="#" class="product__hover product__hover--scale">
+              <span class="product__bookmark product__bookmark--new"
+                >Nowy model</span
+              >
+              <img
+                src="./gfx/thumbs/zoi-20-cb29.jpg"
+                alt="bike 9"
+                class="product__img product__img--contain"
+              />
+              <p class="product__title product__title--products">zoi-20</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="section">
+      <section class="section--gray">
+        <div class="container">
+          <div class="footer">
+            <a href="#" class="footer__link"> ROWERY </a>
+            <a href="#" class="footer__link"> O NAS </a>
+            <a href="#" class="footer__link"> GALERIA </a>
+            <a href="#" class="footer__link"> KONTAKT </a>
+          </div>
+        </div>
+      </section>
+      <section class="section--black">
+        <div class="container">
+          <div class="footer footer--copyright">
+            <p>© Copyright STRONA ROWERY 2022, All Rights Reserved</p>
+            <p><a href="https://geostrony.pl">geostrony.pl</a></p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>

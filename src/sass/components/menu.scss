@@ -26,7 +26,6 @@
     line-height: 1.5rem;
     margin-left: 2px;
     color: $color-black-lite;
-    text-decoration: none;
 
     &--all {
       color: $color-gray-lite;
@@ -42,7 +41,7 @@
     }
   }
 
-  &__slider {
+  &__product {
     width: 25%;
     margin: 1em 0;
   }

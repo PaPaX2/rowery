@@ -1,9 +1,12 @@
 @import "nav";
-@import "slider";
-@import "title";
+@import "product"; //home, menu, kategoria
+@import "title"; //home i rowery
+@import "footer";
+@import "section";
 @import "btn";
-@import "category";
+@import "category"; //home i kategoria
 @import "menu";
 @import "hamburger";
 @import "dropdown";
-@import "filters";
+@import "filters"; // rowery
+@import "breadcrumbs"; // kategoria

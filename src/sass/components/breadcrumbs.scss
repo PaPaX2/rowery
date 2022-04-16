@@ -1,0 +1,18 @@
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  line-height: 2em;
+
+  &__item {
+    padding-right: 6px;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $color-black-lite;
+
+    &:not(:last-child):after {
+      content: "\00BB";
+      margin-left: 6px;
+    }
+  }
+}

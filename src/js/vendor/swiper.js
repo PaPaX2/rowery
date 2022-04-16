@@ -1,6 +1,6 @@
 import Swiper from "swiper/bundle";
 
-const swiperMenu = new Swiper(".slider--menu", {
+const swiperMenu = new Swiper(".product--menu", {
   init: false,
   preloadImages: false,
   lazy: true,
@@ -14,7 +14,7 @@ const swiperMenu = new Swiper(".slider--menu", {
   },
 });
 
-const swiperMain = new Swiper(".slider--main", {
+const swiperMain = new Swiper(".product--main", {
   autoplay: {
     delay: 4500,
   },
@@ -30,7 +30,7 @@ const swiperMain = new Swiper(".slider--main", {
   },
 });
 
-const swiperProducts = new Swiper(".slider--products", {
+const swiperProducts = new Swiper(".product--products", {
   autoplay: {
     delay: 4000,
   },
@@ -52,12 +52,12 @@ const swiperProducts = new Swiper(".slider--products", {
   },
   loop: true,
   navigation: {
-    nextEl: ".slider-button-next--products",
-    prevEl: ".slider-button-prev--products",
+    nextEl: ".product-button-next--products",
+    prevEl: ".product-button-prev--products",
   },
 });
 
-const swiperYours = new Swiper(".slider--yours", {
+const swiperYours = new Swiper(".product--yours", {
   autoplay: {
     delay: 4000,
   },
@@ -81,4 +81,4 @@ const swiperYours = new Swiper(".slider--yours", {
   loop: true,
 });
 
-export { swiperMenu };
+export default swiper;

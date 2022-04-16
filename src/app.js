@@ -1,10 +1,7 @@
 "use strict";
 
 import "./sass/style.scss";
-import { swiperMenu } from "./js/vendor/swiper";
-
-//swiperMain;
-//swiperYours;
+import Swiper from "./js/vendor/swiper";
 
 const section = document.querySelector(".section--menu");
 const menuJs = document.querySelectorAll(".menuJS");
@@ -17,13 +14,13 @@ menuJs.forEach((item) => {
 
     if (section.classList.contains("active")) {
       if (i === 0) {
-        swiperMenu.init(".slider--menu");
+        Swiper.swiperMenu.init(".product--menu");
         i = 1;
       } else {
-        swiperMenu.autoplay.start();
+        Swiper.swiperMenu.autoplay.start();
       }
     } else {
-      swiperMenu.autoplay.stop();
+      Swiper.swiperMenu.autoplay.stop();
     }
   });
 });
