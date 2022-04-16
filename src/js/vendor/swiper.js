@@ -1,6 +1,9 @@
 import Swiper from 'swiper/bundle';
 
 const swiperMenu = new Swiper('.slider--menu', {
+  init: false,
+  preloadImages: false,
+  lazy: true,
   autoplay: {
     delay: 4500,
   },
@@ -78,4 +81,4 @@ const swiperMain = new Swiper('.slider--main', {
     loop: true,
   });
 
-  export {swiperMain, swiperProducts, swiperYours};
+  export {swiperMenu};
