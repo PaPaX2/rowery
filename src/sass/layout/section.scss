@@ -1,36 +1,36 @@
 .section {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 
-    &--black {
-        background-color: $color-black-lite;
-        color: $color-white;
-    }
+  &--black {
+    background-color: $color-black-lite;
+    color: $color-white;
+  }
 
-    &--gray {
-        background-color: $color-gray;
-    }
+  &--gray {
+    background-color: $color-gray;
+  }
 
-    &--nav {
-        position: fixed;
-        z-index: 99;
-    }
+  &--nav {
+    position: fixed;
+    z-index: 99;
+  }
 
-    &--first {
-        padding-top: 70px;
-    }
+  &--first {
+    padding-top: 70px;
+  }
 
-    &--products {
-        margin-bottom: 50px;
-    }
+  &--products {
+    margin-bottom: 50px;
+  }
 
-    &--menu {
-        z-index: 9;
-        background-color: $color-white;
-        display: none;
-        
-        &.active {
-            display: block;
-        }
+  &--menu {
+    z-index: 9;
+    background-color: $color-white;
+    display: none;
+
+    &.active {
+      display: block;
     }
+  }
 }

@@ -1,34 +1,34 @@
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  @include mobile-wild {
+    font-size: 0.8em;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 500;
+    padding: 25px 0;
+    transition: text-decoration 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+      transition: text-decoration 0.5s;
+    }
+  }
+
+  &--copyright {
+    font-size: 1rem;
+
+    & a {
+      color: $color-white;
+    }
+
     @include mobile-wild {
-        font-size: .8em;
+      font-size: 0.7rem;
     }
-
-    &__link {
-        text-decoration: none;
-        color: $color-white;
-        font-weight: 500;
-        padding: 25px 0;
-        transition: text-decoration .5s;
-
-        &:hover {
-            text-decoration: underline;
-            transition: text-decoration .5s;
-        }
-    }
-
-    &--copyright {
-        font-size: 1rem;
-
-        & a {
-            color: $color-white;
-        }
-        
-        @include mobile-wild {
-            font-size: 0.7rem;
-        }
-    }
+  }
 }

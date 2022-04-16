@@ -1,62 +1,62 @@
 .menu {
+  display: flex;
+  font-size: 0.9rem;
+
+  &__links {
+    width: 75%;
+  }
+
+  &__row {
     display: flex;
-    font-size: .9rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 
-    &__links {
-        width: 75%;
+  &__list {
+    flex: 1 1 25%;
+    list-style: none;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+
+  &__link {
+    line-height: 1.5rem;
+    margin-left: 2px;
+    color: $color-black-lite;
+    text-decoration: none;
+
+    &--all {
+      color: $color-gray-lite;
+
+      &:after {
+        content: "\00BB";
+        margin-left: 4px;
+      }
     }
 
-    &__row {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+    &:hover {
+      color: $color-red;
     }
+  }
 
-    &__list {
-        flex: 1 1 25%;
-        list-style: none;
+  &__slider {
+    width: 25%;
+    margin: 1em 0;
+  }
+
+  &-close {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    &__close {
+      font-size: 1rem;
+      cursor: pointer;
     }
-
-    &__title {
-        text-transform: uppercase;
-        font-size: 1rem;
-    }
-
-    &__link {
-        line-height: 1.5rem;
-        margin-left: 2px;
-        color: $color-black-lite;
-        text-decoration: none;
-
-        &--all {
-            color: $color-gray-lite;
-
-            &:after {
-                content: "\00BB";
-                margin-left: 4px;
-            }
-        }
-
-        &:hover {
-            color: $color-red;
-        }
-    }
-
-    &__slider {
-        width: 25%;
-        margin: 1em 0;
-    }
-
-    &-close {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 0;
-
-        &__close {
-            font-size: 1rem;
-            cursor: pointer;
-        }
-    }
+  }
 }

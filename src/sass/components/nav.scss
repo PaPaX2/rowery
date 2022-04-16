@@ -1,72 +1,69 @@
 .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+
+  &__logo {
+    z-index: 9;
+    &-img {
+      width: 75%;
+      max-width: 450px;
+    }
+  }
+
+  &__menu {
+    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 70px;
-
-    &__logo {
-        z-index: 9;
-        &-img {
-            width: 75%;
-            max-width: 450px;
-        }
-    }
-
-    &__menu {
-        list-style: none;
-        display: flex;
-        padding: 0;
-        margin: 0;
-
-        &--mobile {
-            flex-direction: column;
-            padding-top: 70px;
-
-            &:before {
-                content: "";
-                border-top: 1px solid white;
-                width: 92%;
-                margin: 0 auto;
-                padding-bottom: 20px;
-            }
-        }
-    }
-    
-    &__item {
-        margin-left: 20px;
-
-        &--mobile {
-            margin: 14px 30px;
-        }
-
-        &--sub {
-            font-size: 0.8em;
-            margin: 10px 45px;
-        }
-    }
-
-
-
-    &__link {
-        color: $color-white;
-        text-decoration: none;
-        
-        &:hover {
-            color: $color-gray;
-        }
-    }
-
-
-    &--desktop {
-        @include tablet {
-            display: none;
-        }
-    }
+    padding: 0;
+    margin: 0;
 
     &--mobile {
-        @include desktop {
-            display: none;
-        }
+      flex-direction: column;
+      padding-top: 70px;
+
+      &:before {
+        content: "";
+        border-top: 1px solid white;
+        width: 92%;
+        margin: 0 auto;
+        padding-bottom: 20px;
+      }
     }
+  }
+
+  &__item {
+    margin-left: 20px;
+
+    &--mobile {
+      margin: 14px 30px;
+    }
+
+    &--sub {
+      font-size: 0.8em;
+      margin: 10px 45px;
+    }
+  }
+
+  &__link {
+    color: $color-white;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-gray;
+    }
+  }
+
+  &--desktop {
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    @include desktop {
+      display: none;
+    }
+  }
 }

@@ -6,11 +6,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
-const html = [
-  "index",
-  "onas",
-  "rowery",
-].map(
+const html = ["index", "onas", "rowery"].map(
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,
@@ -26,7 +22,7 @@ module.exports = {
   },
   node: {
     global: false,
-    __filename: 'mock',
+    __filename: "mock",
   },
   optimization: {
     minimize: true,
@@ -45,7 +41,7 @@ module.exports = {
         test: /\.js(\?.*)?$/i,
       }),
     ],
-  }, 
+  },
 
   module: {
     rules: [

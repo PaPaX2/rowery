@@ -1,29 +1,29 @@
 body {
-    width: 100%;
-    font-size: 20px;
-    color: $color-black-lite;
-    font-family: 'Dosis';
-    background: $color-white;
-    overflow-x: hidden
+  width: 100%;
+  font-size: 20px;
+  color: $color-black-lite;
+  font-family: "Dosis";
+  background: $color-white;
+  overflow-x: hidden;
 }
 
 ul {
-    padding: 0;
+  padding: 0;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 
 .container {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-.anchor{
-    display: block;
-    height: 70px; /*same height as header*/
-    margin-top: -70px; /*same height as header*/
-    visibility: hidden;
+.anchor {
+  display: block;
+  height: 70px; /*same height as header*/
+  margin-top: -70px; /*same height as header*/
+  visibility: hidden;
 }

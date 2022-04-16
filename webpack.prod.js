@@ -6,11 +6,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 
-const html = [
-  "index",
-  "onas",
-  "rowery",
-].map(
+const html = ["index", "onas", "rowery"].map(
   (item) =>
     new HtmlWebpackPlugin({
       template: `./src/${item}.html`,
@@ -26,7 +22,7 @@ module.exports = {
   },
   node: {
     global: false,
-    __filename: 'mock',
+    __filename: "mock",
   },
   optimization: {
     minimize: true,
@@ -45,7 +41,7 @@ module.exports = {
         test: /\.js(\?.*)?$/i,
       }),
     ],
-  }, 
+  },
 
   module: {
     rules: [
@@ -70,17 +66,17 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: 'public/gfx/images/[hash][ext][query]'
-        }
+          filename: "public/gfx/images/[hash][ext][query]",
+        },
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
+        type: "asset/resource",
         generator: {
-          filename: 'public/gfx/fonts/[hash][ext][query]'
-        }
+          filename: "public/gfx/fonts/[hash][ext][query]",
+        },
       },
     ],
   },
@@ -94,9 +90,7 @@ module.exports = {
     ...html,
 
     new CopyPlugin({
-      patterns: [
-        {from: "./server_config.js", to: "server.js" }
-      ],
+      patterns: [{ from: "./server_config.js", to: "server.js" }],
     }),
   ],
 };
