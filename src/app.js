@@ -2,6 +2,7 @@
 
 import "./sass/style.scss";
 import SwiperMenu from "./js/vendor/swiper";
+import Modal from "./js/components/modal";
 
 const section = document.querySelector(".section--menu");
 const menuJs = document.querySelectorAll(".menuJS");
@@ -24,3 +25,5 @@ menuJs.forEach((item) => {
     }
   });
 });
+
+Modal();
