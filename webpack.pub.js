@@ -17,7 +17,7 @@ module.exports = {
   entry: "./src/app.js",
   //devtool: "inline-source-map",
   output: {
-    filename: "app.[contenthash].js",
+    filename: "app.js",
     path: path.resolve(__dirname, "./docs"),
   },
   node: {

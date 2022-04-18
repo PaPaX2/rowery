@@ -8,8 +8,12 @@
   &__logo {
     z-index: 9;
     &-img {
-      width: 75%;
-      max-width: 450px;
+      width: 100%;
+      max-width: 320px;
+
+      @include mobile {
+        max-width: 200px;
+      }
     }
   }
 
