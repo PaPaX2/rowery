@@ -1,7 +1,12 @@
 .breadcrumbs {
   display: flex;
   flex-direction: row;
-  line-height: 2em;
+  flex-wrap: wrap;
+  margin: 1em 0;
+
+  @include mobile {
+    line-height: 1em;
+  }
 
   &__item {
     padding-right: 6px;

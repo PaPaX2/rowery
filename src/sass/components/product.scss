@@ -12,6 +12,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__slide {
@@ -60,6 +64,11 @@
     height: calc(700 * 100vw / 1200);
     min-height: 200px;
     transform: scale(1);
+  }
+
+  &__similar {
+    flex-basis: 50%;
+    height: 100%;
   }
 
   .swiper-slide-visible {

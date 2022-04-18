@@ -1,6 +1,6 @@
 @import "nav";
-@import "product"; //home, menu, kategoria
-@import "title"; //home i rowery
+@import "product"; //home, menu, kategoria, produkt
+@import "title"; //home rowery produkt
 @import "footer";
 @import "section";
 @import "btn";
@@ -9,4 +9,6 @@
 @import "hamburger";
 @import "dropdown";
 @import "filters"; // rowery
-@import "breadcrumbs"; // kategoria
+@import "breadcrumbs"; // kategoria, produkt
+@import "bike"; //produkt
+@import "technical"; //produkt

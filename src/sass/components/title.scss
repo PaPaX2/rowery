@@ -12,10 +12,30 @@
     &--bold {
       font-weight: 700;
     }
+
+    &--no-margin {
+      margin: 0;
+    }
   }
 
   &__subtitle {
     margin: 0;
     font-style: italic;
+  }
+
+  @include tablet {
+    padding: 40px 0;
+
+    &__uppercase {
+      font-size: 2rem;
+    }
+  }
+
+  @include mobile {
+    padding: 25px 0;
+
+    &__uppercase {
+      font-size: 1.7rem;
+    }
   }
 }
