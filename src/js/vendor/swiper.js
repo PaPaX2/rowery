@@ -81,4 +81,4 @@ const swiperYours = new Swiper(".product--yours", {
   loop: true,
 });
 
-export default swiper;
+export default swiperMenu;
