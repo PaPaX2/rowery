@@ -17,12 +17,16 @@ app.get("/", (req, res) => {
   res.show("/index.html");
 });
 
-app.get("/onas", (req, res) => {
-  res.show("/onas.html");
+app.get("/kategoria", (req, res) => {
+  res.show("/kategoria.html");
 });
 
 app.get("/rowery", (req, res) => {
   res.show("/rowery.html");
+});
+
+app.get("/produkt", (req, res) => {
+  res.show("/produkt.html");
 });
 
 const PORT = process.env.PORT || port;
