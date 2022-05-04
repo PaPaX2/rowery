@@ -3,20 +3,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
-
-  &__logo {
-    z-index: 9;
-    &-img {
-      width: 100%;
-      max-width: 320px;
-
-      @include mobile {
-        max-width: 200px;
-      }
-    }
-  }
-
+  
   &__menu {
     list-style: none;
     display: flex;
@@ -55,18 +42,6 @@
 
     &:hover {
       color: $color-gray;
-    }
-  }
-
-  &--desktop {
-    @include tablet {
-      display: none;
-    }
-  }
-
-  &--mobile {
-    @include desktop {
-      display: none;
     }
   }
 }

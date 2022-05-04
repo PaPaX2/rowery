@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    
+    &__logo {
+        z-index: 9;
+            &-img {
+            width: 100%;
+            max-width: 320px;
+        
+            @include mobile {
+                max-width: 200px;
+            }
+        }
+    }
+
+    &__desktop {
+        @include tablet {
+          display: none;
+        }
+    }
+    
+    &__mobile {
+        @include desktop {
+            display: none;
+        }
+    }
+}
